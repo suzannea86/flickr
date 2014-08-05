@@ -1,0 +1,10 @@
+= form_tag({:controller => 'search', :action => 'index'}, :method => 'get') do
+  = text_field_tag :search, params[:search], :id => 'search_field'
+  = submit_tag "Search", :name => nil
+- if @search_results
+  - @search_results.each do |result|
+    = link_to FlickRaw.url result do
+      = image_tag FlickRaw.url_s result
+    br
+    = result.title
+    br
