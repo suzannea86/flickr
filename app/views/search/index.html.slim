@@ -8,3 +8,8 @@
     br
     = result.title
     br
+  
+  = link_to("« prev", root_path(:page => @search_results.page - 1, :search => params[:search])) if @search_results.page > 1
+  = "  #{@search_results.page} / #{@search_results.pages}  "
+  = link_to("next »", root_path(:page => @search_results.page + 1, :search => params[:search])) if @search_results.page < @search_results.pages
+
