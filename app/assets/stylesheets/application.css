@@ -11,3 +11,37 @@
  *= require_self
  *= require_tree .
  */
+
+#search-text {
+  margin-bottom: 10px;
+}
+
+.search-form {
+  margin-left: 30px;
+}
+
+#search-field {
+  margin: 0 10px 30px 0;
+  font-size: 15px;
+}
+
+#submit-tag {
+  font-size: 13px;
+}
+
+#title {
+  margin: 5px 0px;
+}
+
+#image {
+  margin-bottom: 30px;
+}
+
+.alert, .no-result {
+  color: #FF0000;
+}
+
+.no-result{
+  margin-top: -20px;
+}
+
